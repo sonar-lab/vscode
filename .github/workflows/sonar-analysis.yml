@@ -28,6 +28,7 @@ jobs:
             "-Dsonar.sources=." `
             "-Dsonar.exclusions=**/tests/**,**/*.md" `
             "-Dsonar.javascript.node.maxspace=4096" `
+            "-Dsonar.sourceEncoding=UTF-8" `
             "-Dsonar.host.url=http://localhost:9000" `
             "-Dsonar.login=${{ secrets.SONAR_TOKEN }}"
         env:
